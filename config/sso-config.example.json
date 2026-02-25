@@ -1,0 +1,18 @@
+{
+  "sso": {
+    "enabled": true,
+    "provider": "okta",
+    "protocol": "saml2",
+    "entityId": "https://auth.meridianvoice.com/saml",
+    "acsUrl": "https://auth.meridianvoice.com/saml/callback",
+    "idpMetadataUrl": "https://your-org.okta.com/app/your-app-id/sso/saml/metadata",
+    "attributeMapping": {
+      "email": "user.email",
+      "firstName": "user.firstName",
+      "lastName": "user.lastName",
+      "role": "user.role"
+    },
+    "defaultRole": "viewer",
+    "allowedDomains": ["yourcompany.com"]
+  }
+}
