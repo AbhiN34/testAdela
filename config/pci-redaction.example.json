@@ -1,0 +1,10 @@
+{
+  "pciRedaction": {
+    "enabled": true,
+    "mode": "mask",
+    "patterns": ["credit_card", "cvv", "expiration_date"],
+    "pauseRecordingOnPayment": true,
+    "redactionMarker": "[PCI-REDACTED]",
+    "applyTo": ["transcripts", "webhooks", "exports"]
+  }
+}
